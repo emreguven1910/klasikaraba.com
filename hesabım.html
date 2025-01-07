@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr-türkiye">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Arabalar - Hesabım</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Arabalar</h1>
+        <nav class="navbar">
+           <ul>
+               <a href="index.html">Ana Sayfa</a>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+               <li><a href="iletisim.html">İletişim</a></li>
+               <li><a href="tarihce.html">Tarihçe</a></li>
+               <li><a href="modeller.html">Modeller</a></li>
+               <li><a href="karsilastirma.html">Karşılaştırma</a></li>
+               <li><a href="galeri.html">Galeri</a></li>
+               <li><a href="giris.html" class="active">Giriş</a></li>
+               <li><a href="uyeol.html" class="active">Üye ol</a></li>
+               <li><a href="forum.html">Forum</a></li>
+               <li><a href="hesabım.html" class="active">Hesabım</a></li>
+               <li><a href="logout.php">Çıkış</a></li>
+           </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="hesap-bilgileri">
+            <h2>Hesap Bilgilerim</h2>
+            <form action="hesap_guncelle.php" method="POST">
+                <label for="kullanici_adi">Kullanıcı Adı:</label>
+                <input type="text" id="kullanici_adi" name="kullanici_adi" value="Mevcut Kullanıcı Adı" required>
+
+                <label for="email">E-posta Adresi:</label>
+                <input type="email" id="email" name="email" value="mevcut.email@example.com" required>
+
+                <label for="sifre">Şifre:</label>
+                <input type="password" id="sifre" name="sifre" placeholder="Yeni şifre belirleyin">
+
+                <button type="submit">Bilgileri Güncelle</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arabalar. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

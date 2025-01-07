@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr-türkiye">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Arabalar - Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Arabalar</h1>
+        <nav class="navbar">
+           <ul>
+               <a href="index.html">Ana Sayfa</a>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+               <li><a href="iletisim.html">İletişim</a></li>
+               <li><a href="tarihce.html">Tarihçe</a></li>
+               <li><a href="modeller.html">Modeller</a></li>
+               <li><a href="karsilastirma.html">Karşılaştırma</a></li>
+               <li><a href="galeri.html">Galeri</a></li>
+               <li><a href="giris.html" class="active">Giriş</a></li>
+               <li><a href="uyeol.html" class="active">Üye ol</a></li>
+               <li><a href="forum.html">Forum</a></li>
+               <li><a href="hesabım.html" class="active">Hesabım</a></li>
+               <li><a href="logout.php">Çıkış</a></li>
+           </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="forum-container">
+            <h2>Son Konular</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Konu Başlığı</th>
+                        <th>Yazar</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="konu1.html">Yeni Arabalar Hakkında Tartışma</a></td>
+                        <td>Ali</td>
+                        <td>05.01.2025</td>
+                    </tr>
+                    <tr>
+                        <td><a href="konu2.html">Modifiye Araçlar İçin Öneriler</a></td>
+                        <td>Ayşe</td>
+                        <td>04.01.2025</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="yeni-konu">
+                <h3>Yeni Konu Aç</h3>
+                <form action="yeni_konu.php" method="POST">
+                    <label for="konu_baslik">Konu Başlığı:</label>
+                    <input type="text" id="konu_baslik" name="konu_baslik" required>
+
+                    <label for="konu_icerik">Konu İçeriği:</label>
+                    <textarea id="konu_icerik" name="konu_icerik" rows="5" required></textarea>
+
+                    <button type="submit">Konu Oluştur</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arabalar. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
